@@ -1,0 +1,22 @@
+.abotMe {
+	background-color: #191919;
+
+	p {
+		color: rgba(198,201,216,.75);
+	}
+
+	.nav-link {
+		font-size: 1.2rem;
+
+		&::after {
+			@extend %border_bottom-noActive;
+		}
+	}
+
+	.nav-link.active {
+		&::after {
+			@extend %border_bottom;
+			width: 100%;
+		}
+	}
+}

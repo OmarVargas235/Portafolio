@@ -1,0 +1,39 @@
+.bg-header {
+	background-image: url('../images/header_background.webp');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 150px 0;
+	color: white;
+
+	.container {
+		padding-top: 76px;
+	}
+
+	.welcome {
+		font-size: 15px;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		color: rgba(198,201,216,.75);
+	}
+	
+	.container-carousel {
+		position: relative;
+		font-size: 3rem;
+		overflow: hidden;
+		height: 110px;;
+	}
+
+	.notActive {
+		transform: translateY(-90px);
+	}
+
+	.container-carousel p {
+		position: absolute;
+		color: #F9004D;
+		margin-bottom: 0;
+		font-weight: bold !important
+	}
+}
+
+@import '../layaut/header_animation.scss';

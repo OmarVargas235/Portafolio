@@ -1,0 +1,16 @@
+body {
+	min-height: 100vh;
+	// font-family: 'Poppins', sans-serif !important;
+}
+
+h1, h2 {
+	font-family: 'Poppins', sans-serif !important;
+	font-weight: bold !important;
+	color: white !important;
+}
+
+@import './utilities/place-holder.scss';
+
+@import './views/header.scss';
+@import './views/navbar.scss';
+@import './views/abotMe.scss';

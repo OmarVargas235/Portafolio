@@ -1,0 +1,49 @@
+.animate-outside {
+	animation: animateOutside .2s forwards;
+}
+
+.animate-inside {
+	animation: animateInside .2s forwards;
+}
+
+@keyframes animateOutside {
+	0% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+
+	50% {
+		transform: translateY(-35px);
+	}
+
+	100% {
+		transform: translateY(-75px);
+		opacity: 0;
+	}
+}
+
+@keyframes animateInside {
+	from {
+		transform: translateY(65px);
+	}
+
+	to {
+		transform: translateY(0px);
+	}
+}
+
+@media (max-width: 767px) {
+	.bg-header {
+		h1, .container-carousel {
+			font-size: 7vh; 
+		}
+	}
+}
+
+@media (max-width: 510px) {
+	.bg-header {
+		h1, .container-carousel {
+			font-size: 7vw; 
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.collapse {
+	width: 75%;
+	right: -75%;
+}
+
+@media (min-width: 576px) {
+	.collapse {
+		width: 50%;
+		right: -50%;
+	}
+}
+
+.menuActive {
+	right: 0%;
+}
+
+@media (max-width: 767px) {
+	.collapse {
+		min-height: 100vh !important;
+		position: fixed !important;
+		background-color: #101010;
+		transition: right 1s cubic-bezier(1,.09,.05,.9);
+		top: 62px;
+		display: block !important;
+		font-size: 1.3rem;
+	}
+
+	.nav-item .nav-link {
+		padding-bottom: .2rem;
+	}
+}

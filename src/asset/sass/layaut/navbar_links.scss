@@ -1,0 +1,28 @@
+.nav-item {
+	margin-right: .7rem;
+	margin-left: 1rem;
+	cursor: pointer;
+
+	.nav-link {
+		transition: color .3s ease-in-out;
+		color: white;
+		padding-bottom: 1.1rem;
+		border-radius: 0 !important;
+		background-color: transparent !important;
+		position: relative;
+
+		&::after {
+			@extend %border_bottom;
+		}
+	}
+
+	.active {
+		position: relative;
+		color: #F9004D !important;
+
+		&::after {
+			@extend %border_bottom;
+			width: 100%;
+		}
+	}
+}
