@@ -4,9 +4,9 @@ import { ReactComponent as GitHubIcon } from '../../asset/icons/github.svg';
 import { ReactComponent as Linkedin } from '../../asset/icons/linkedin.svg';
 import { ReactComponent as BtnToggle } from '../../asset/icons/btn_toggle.svg';
 
-const NavbarPage = ({ menuRef }) => (
+const NavbarPage = ({ menuRef, isPositionFixed }) => (
 	
-	<nav className="navbar navbar-expand-md bg-dark w-100 pb-md-0 pt-md-4 px-5">
+	<nav className={`navbar navbar-expand-md bg-dark w-100 pb-md-0 px-5 ${isPositionFixed ? 'navbarFixed' : ''}`}>
 		<span className="navbar-brand mr-4">
 			<img src={Icon} alt="brand" />
 		</span>
@@ -22,23 +22,23 @@ const NavbarPage = ({ menuRef }) => (
 
 		<div className="collapse navbar-collapse" ref={menuRef}>
 			<ul className="nav navbar-nav nav-pills p-3 p-sm-5 p-md-0">
-				<li className="nav-item mb-3 mb-md-0">
+				<li className="nav-item mb-3 mb-md-0 mr-md-3">
 					<span className="nav-link active" data-toggle="pill">Home</span>
 				</li>
 
-				<li className="nav-item mb-3 mb-md-0">
+				<li className="nav-item mb-3 mb-md-0 mr-md-3">
 					<span className="nav-link" data-toggle="pill">About</span>
 				</li>
 
-				<li className="nav-item mb-3 mb-md-0">
+				<li className="nav-item mb-3 mb-md-0 mr-md-3">
 					<span className="nav-link" data-toggle="pill">Service</span>
 				</li>
 
-				<li className="nav-item mb-3 mb-md-0">
+				<li className="nav-item mb-3 mb-md-0 mr-md-3">
 					<span className="nav-link" data-toggle="pill">Portafolio</span>
 				</li>
 
-				<li className="nav-item mb-3 mb-md-0">
+				<li className="nav-item mb-3 mb-md-0 mr-md-3">
 					<span className="nav-link" data-toggle="pill">Contact</span>
 				</li>
 			</ul>

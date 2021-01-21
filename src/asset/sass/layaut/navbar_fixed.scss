@@ -1,0 +1,20 @@
+.navbarFixed {
+	animation: animationNavbarFixed .1s;
+	transition: background-color .1s, padding-top .7s;
+	position: fixed !important;
+	padding-top: 1.4rem !important;
+
+	&.bg-dark {
+		background-color: #191919 !important;
+	}
+}
+
+@keyframes animationNavbarFixed {
+	from {
+		transform: translateY(40px);
+	}
+
+	to {
+		transform: translateY(0px);
+	}
+}
