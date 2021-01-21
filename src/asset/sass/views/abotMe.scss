@@ -5,8 +5,13 @@
 		color: rgba(198,201,216,.75);
 	}
 
+	img {
+		border-radius: .25rem;
+	}
+
 	.nav-link {
 		font-size: 1.2rem;
+		font-weight: normal;
 
 		&::after {
 			@extend %border_bottom-noActive;
