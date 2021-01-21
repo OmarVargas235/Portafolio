@@ -1,6 +1,6 @@
 import React from 'react';
 import SkillsPage from './SkillsPage';
-import CertificationPage from './CertificationPage';
+import EducationPage from './EducationPage';
 import Me from '../../asset/images/me.png';
 
 const AboutMePage = ({ isSkills, setIsSkills }) => (
@@ -27,16 +27,16 @@ const AboutMePage = ({ isSkills, setIsSkills }) => (
 							>Main skills</span>
 						</li>
 
-						<li className="nav-item ml-2">
+						<li className="nav-item ml-4">
 							<span 
 								className="nav-link pb-2" 
 								data-toggle="pill"
 								onClick={() => setIsSkills(false)}
-							>Education & Certification</span>
+							>Education</span>
 						</li>
 					</ul>
 
-					{ isSkills ? <SkillsPage /> : <CertificationPage /> }
+					{ isSkills ? <SkillsPage /> : <EducationPage /> }
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,11 @@
 body {
 	min-height: 100vh;
-	// font-family: 'Poppins', sans-serif !important;
 }
+
+p {
+	color: rgba(198,201,216,.75);
+}
+
 
 h1, h2 {
 	font-family: 'Poppins', sans-serif !important;
@@ -14,3 +18,4 @@ h1, h2 {
 @import './views/header.scss';
 @import './views/navbar.scss';
 @import './views/abotMe.scss';
+@import './views/myService.scss';
