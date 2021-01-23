@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../../layaut/Card';
 import { ReactComponent as Phone } from '../../asset/icons/phone.svg';
 import { ReactComponent as Desktop } from '../../asset/icons/desktop.svg';
 import { ReactComponent as Server } from '../../asset/icons/server.svg';
@@ -10,40 +11,29 @@ const MyServicePage = () => (
 			<h2 className="mt-5 text-center">My Service</h2>
 			<p className="text-center px-5">I have experience developing robust apps and websites for high-volume devices. I am proficient at building and maintaining professional relationships.</p>
 			
-			<div className="row mt-5">
-				<div className="col-4 pl-0">
-					<div className="card p-lg-4">
-						<Phone />
-					
-						<div className="card-body px-3">
-							<h4 className="card-title">Responsive web design</h4>
-							<p className="card-text">Build applications that adapt to different mobile and desktop devices.</p>
-						</div> 
-					</div>
+			<div className="row mt-5 px-5 px-sm-0">
+				<div className="col-sm-6 col-md-4 pl-md-0">
+					<Card 
+						Icon={Phone}
+						title='Responsive web design'
+						text='Build applications that adapt to different mobile and desktop devices.'
+					/>
 				</div>
 				
-				<div className="col-4">
-					<div className="card p-lg-4">
-						<Desktop />
-					
-						<div className="card-body px-3">
-					
-							<h4 className="card-title">Website Development</h4>
-							<p className="card-text">Build Websites, portfolios and ecommerce sites based on client requirements.</p>
-						</div> 
-					</div>
+				<div className="mt-4 mt-sm-0 col-sm-6 col-md-4">
+					<Card 
+						Icon={Desktop}
+						title='Website Development'
+						text='Build Websites, portfolios and ecommerce sites based on client requirements.'
+					/>
 				</div>
 				
-				<div className="col-4 pr-0">
-					<div className="card p-lg-4">
-						<Server />
-					
-						<div className="card-body px-3">
-					
-							<h4 className="card-title">Backend Development</h4>
-							<p className="card-text">Development of backend services, Rest Apis, with variety of technologies.</p>
-						</div> 
-					</div>
+				<div className="mt-4 mt-md-0 pr-md-0 col-sm-6 col-md-4">
+					<Card 
+						Icon={Server}
+						title='Backend Development'
+						text='Development of backend services, Rest Apis, with variety of technologies.'
+					/>
 				</div>
 			</div>
 		</div>

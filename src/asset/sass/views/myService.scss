@@ -3,7 +3,6 @@
 
 	h4 {
 		font-size: 1.2rem;
-		// font-size: 1.5rem;
 		color: white;
 	}
 
@@ -55,9 +54,17 @@
 	}
 }
 
+@media (max-width: 376px) {
+	.myService {
+		.row.px-5 {
+			padding-right: 1.4rem !important;
+			padding-left: 1.4rem !important;
+		}
+	}
+}
+
 @media (min-width: 992px) {
 	.myService {
-
 		h4 {
 			font-size: 1.5rem;
 		}
