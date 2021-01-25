@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../layaut/Card';
+import Title from '../../layaut/Title';
 import { ReactComponent as Phone } from '../../asset/icons/phone.svg';
 import { ReactComponent as Desktop } from '../../asset/icons/desktop.svg';
 import { ReactComponent as Server } from '../../asset/icons/server.svg';
@@ -8,9 +9,11 @@ const MyServicePage = () => (
 	
 	<article className="myService">
 		<div className="container py-5">
-			<h2 className="mt-5 text-center">My Service</h2>
-			<p className="text-center px-5">I have experience developing robust apps and websites for high-volume devices. I am proficient at building and maintaining professional relationships.</p>
-			
+			<Title 
+				title='My Service'
+				text='I have experience developing robust apps and websites for high-volume devices. I am proficient at building and maintaining professional relationships.'
+			/>
+						
 			<div className="row mt-5 px-5 px-sm-0">
 				<div className="col-sm-6 col-md-4 pl-md-0">
 					<Card 

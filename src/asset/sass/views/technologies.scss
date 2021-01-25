@@ -1,0 +1,47 @@
+.technologies {
+	background-color: #191919;
+
+	img {
+		width: 80px;
+		margin: 15px;
+	}
+
+	.javascript {
+		width: 105px;
+		margin-top: 0;
+	}
+
+	.styledComponent {
+		border-radius: 50%;
+	}
+
+	.react, .redux {
+		width: 90px;
+	}
+
+	.mongodb {
+		width: 120px;
+		margin-left: 0;
+	}
+}
+
+.grid-technologies {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+	.grid-technologies {
+		grid-template-columns: repeat(3, 1fr);
+	}	
+}
+
+@media (max-width: 576px) {
+	.grid-technologies {
+		grid-template-columns: repeat(2, 1fr);
+		
+		.socket {
+			margin-left: 0;
+		}
+	}	
+}
