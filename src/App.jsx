@@ -6,6 +6,7 @@ import Navbar from './components/navbar/';
 import AboutMe from './components/aboutMe/';
 import MyService from './components/services/';
 import Technologies from './components/technologies/';
+import Works from './components/works';
 
 const App = () => (
 
@@ -15,6 +16,7 @@ const App = () => (
 		<AboutMe />
 		<MyService />
 		<Technologies />
+		<Works />
 	</React.Fragment>
 );
 
