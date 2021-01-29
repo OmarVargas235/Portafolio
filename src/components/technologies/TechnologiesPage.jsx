@@ -4,7 +4,7 @@ import { data } from '../../utils/dataTechnologies';
 
 const TechnologiesPage = () => (
 	
-	<article className="technologies">
+	<section className="technologies">
 		<div className="container py-5">
 			<Title 
 				title='Frameworks and Technologies'
@@ -21,7 +21,7 @@ const TechnologiesPage = () => (
 				}
 			</div>
 		</div>
-	</article>
+	</section>
 )
 
 export default TechnologiesPage;

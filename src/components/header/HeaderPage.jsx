@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeaderPage = ({ containerCarousel }) => (
 	
-	<div className="bg-header">
+	<header className="bg-header bg-header_app">
 		<div className="container">
 			<p className="welcome">WELCOME TO MY PORTFOLIO</p>
 			<h1>
@@ -21,7 +21,7 @@ const HeaderPage = ({ containerCarousel }) => (
 			</h1>
 			
 		</div>
-	</div>
+	</header>
 )
 
 export default HeaderPage;

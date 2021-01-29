@@ -7,7 +7,7 @@ import { ReactComponent as Server } from '../../asset/icons/server.svg';
 
 const MyServicePage = () => (
 	
-	<article className="myService">
+	<section className="myService">
 		<div className="container py-5">
 			<Title 
 				title='My Service'
@@ -40,7 +40,7 @@ const MyServicePage = () => (
 				</div>
 			</div>
 		</div>
-	</article>
+	</section>
 )
 
 export default MyServicePage;

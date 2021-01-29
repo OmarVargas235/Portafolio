@@ -1,3 +1,62 @@
 .myWorks {
 	background-color: #101010;
+	color: white;
+
+	p:first-child {
+		font-size: 1.3rem;
+		color: #c6c9d8;
+	}
+
+	.card {
+		background-color: rgba(0, 0, 0, .2);
+		position: relative;
+	}
+
+	.card-body {
+		position: absolute;
+		left: calc(50% - 99px);
+		top: 50%;
+	}
+
+	.btn {
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		background-color: transparent;
+		color: white;
+		transition: .2s transform ease-in;
+
+		&:hover {
+			background-color: #f9004d;
+			border: 2px solid #f9004d;
+			transform: translateY(-3px);
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	.py-5 {
+		padding-bottom: 6rem !important;
+	}
+
+	.card-bg {
+		background-size: cover;
+		background-position: center center;
+		height: 220px;
+	}
+	
+	@for $i from 1 through 4 {
+
+		.card-bg-#{$i} {
+			background-image: url('../images/presentacion_#{$i}.png');
+
+			@if $i == 2 { opacity: .4; }
+		}
+	}
+}
+
+@media (min-width: 426px) and (max-width: 575px) {
+	.container-cards {
+		padding: 0 4rem;
+	}
 }

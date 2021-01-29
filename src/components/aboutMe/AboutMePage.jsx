@@ -5,7 +5,7 @@ import Me from '../../asset/images/me.png';
 
 const AboutMePage = ({ isSkills, setIsSkills }) => (
 	
-	<div className="abotMe">
+	<section className="abotMe">
 		<div className="container pt-5">
 			<div className="row py-5">
 				<div className="col-12 col-md-6 d-flex align-items-center">
@@ -40,7 +40,7 @@ const AboutMePage = ({ isSkills, setIsSkills }) => (
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 )
 
 export default AboutMePage;
