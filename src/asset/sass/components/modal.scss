@@ -1,0 +1,47 @@
+.modal {
+	background-color: transparent !important;
+
+	svg {
+		color: #C6C6C6;
+		cursor: pointer;
+	}
+
+	img {
+		height: 74vh;
+	}
+
+	.arrow_button {
+		width: 50px;
+		height: 50px;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+		top: 50%;
+	}
+}
+
+.modal-dialog, .modal-content {
+	margin: 0 !important;
+	background-color: transparent !important;
+
+	.modal-header, .modal-footer {
+		border: none;
+	}
+
+	.modal-header, .modal-footer {
+		background-color: rgba(0, 0, 0, .4);
+
+		p {
+			font-size: 1.2rem;
+		}
+	}
+
+	.modal-body {
+		right: 10px;
+	}
+}
+
+@media (min-width: 576px) {
+	.modal-dialog, .modal-content {
+		min-width: 100% !important;
+	}
+}
