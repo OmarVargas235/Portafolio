@@ -1,4 +1,5 @@
 import React from 'react';
+import BtnArrow from '../../../layaut/BtnArrow';
 import { ReactComponent   as FullScreen1} from '../../../asset/icons/fullScreen1.svg';
 import {ReactComponent as FullScreen2} from '../../../asset/icons/fullScreen2.svg';
 import { ReactComponent as Close } from '../../../asset/icons/close.svg';
@@ -34,23 +35,19 @@ const ModalPage = ({ index, data, fullscreen, setFullscreen, modalRef, numberImg
 							}
 						</div>
 						
-						<div 
-							className="arrow_button carousel-control-prev" 
-							href="#myCarousel" 
-							data-slide="prev"
-							onClick={() => nextOrPrevImg('prev')}
-						>
-							<ArrowLeft />
-						</div>
+						<BtnArrow 
+							classCarrousel='carousel-control-prev'
+							dataSlide='prev'
+							nextOrPrevImg={nextOrPrevImg}
+							Icon={ArrowLeft}
+						/>
 
-						<div 
-							className="arrow_button carousel-control-next" 
-							href="#myCarousel" 
-							data-slide="next"
-							onClick={() => nextOrPrevImg('next')}
-						>
-							<ArrowRight />
-						</div>
+						<BtnArrow 
+							classCarrousel='carousel-control-next'
+							dataSlide='next'
+							nextOrPrevImg={nextOrPrevImg}
+							Icon={ArrowRight}
+						/>
 					</div>
 				</div>
 

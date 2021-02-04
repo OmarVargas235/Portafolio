@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from '../container/modal';
 
-const GalleryPage = ({ data, title, isImgActiveCarousel, setIsImgActiveCarousel }) => (
+const GalleryPage = ({ data, isImgActiveCarousel, setIsImgActiveCarousel }) => (
 
 	<React.Fragment>
 		<h2 className="pb-4">Gallery</h2>

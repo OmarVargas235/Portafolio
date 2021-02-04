@@ -21,8 +21,8 @@ const Modal = ({ index, data }) => {
 		let posImg = numberImg;
 		nextOrPrev === 'next' ? posImg += 1 : posImg -= 1;
 
-		if (posImg === -1) setNumberImg(nImg - 1);
-		else if (posImg === nImg) setNumberImg(0);
+		if (posImg === -1) setNumberImg(nImg - 1); // Si es la primera imagen el contador toma el numero de la ultima imagen
+		else if (posImg === nImg) setNumberImg(0); // Si es la ultima imagen reinicia el contador
 		else setNumberImg(posImg);
 	}
 
