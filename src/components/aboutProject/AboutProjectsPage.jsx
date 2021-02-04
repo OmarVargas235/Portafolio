@@ -1,7 +1,7 @@
 import React from 'react';
 import Gallery from './container/gallery';
 
-const AboutProjectsPage = ({ data, title }) => (
+const AboutProjectsPage = ({ data }) => (
 
 	<section className="about">
 		<div className="container py-5 px-5">
@@ -32,7 +32,6 @@ const AboutProjectsPage = ({ data, title }) => (
 			
 			<Gallery 
 				data={data}
-				title={title}
 			/>
 		</div>
 	</section>

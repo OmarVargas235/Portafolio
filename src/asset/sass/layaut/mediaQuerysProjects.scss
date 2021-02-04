@@ -1,0 +1,25 @@
+@media (max-width: 375px) {
+	.project {
+		h1 {
+			font-size: 3rem;
+		}
+
+		p {
+			padding: 0 1rem;
+		}
+	}
+}
+
+@media (max-width: 575px) and (min-width: 426px) {
+	.more_projects__container-card {
+		padding: 0 3rem;
+	}
+}
+
+@media (min-width: 570px) {
+	.project {
+		p {
+			text-align: justify;
+		}
+	}
+}

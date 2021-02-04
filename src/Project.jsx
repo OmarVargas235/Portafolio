@@ -14,7 +14,6 @@ const Project = ({ title, data, history }) => (
 
 		<AboutProjects 
 			data={data}
-			title={title}
 		/>
 
 		<section className="more_projects">

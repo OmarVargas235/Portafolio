@@ -1,12 +1,11 @@
 import React from 'react';
 import AboutProjectsPage from './AboutProjectsPage';
 
-const AboutProjects = ({ data, title }) => {
+const AboutProjects = ({ data }) => {
 
 	return (
 		<AboutProjectsPage 
 			data={data}
-			title={title}
 		/>
 	)
 }
