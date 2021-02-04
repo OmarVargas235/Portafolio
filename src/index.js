@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import './asset/sass/main.scss';
 import './asset/bootstrap.min.css';
 import App from './App';
 import Project from './Project';
 import Navbar from './components/navbar/';
+import { data } from './utils/dataTechnologiesInfo';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,8 +14,21 @@ ReactDOM.render(
     	<Navbar />
 
 		<Switch>
-    		<Route exact path="/" component={App} />
-    		<Route path="/project-details/:name" component={Project} />
+    		<Route exact path="/home" component={App} />
+    		<Route path="/project-details/:name" render={({ history, match }) => {
+           
+          const dataProject = data[match.params.name];
+
+          return (
+              <Project 
+                title={match.params.name}
+                data={dataProject}
+                history={history}
+              />
+           )
+        }} />
+
+        <Redirect from='/' to='/home' />
 		</Switch>
     </Router>
   </React.StrictMode>,
