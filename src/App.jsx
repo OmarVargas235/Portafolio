@@ -5,6 +5,7 @@ import MyService from './components/services/';
 import Technologies from './components/technologies/';
 import Works from './components/works/';
 import HireMe from './components/contactMe/';
+import Footer from './layaut/Footer';
 
 const App = () => (
 	
@@ -15,6 +16,7 @@ const App = () => (
 		<Technologies />
 		<Works />
 		<HireMe />
+		<Footer color="#101010" />
 	</React.Fragment>
 );
 

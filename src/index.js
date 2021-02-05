@@ -6,30 +6,33 @@ import './asset/bootstrap.min.css';
 import App from './App';
 import Project from './Project';
 import Navbar from './components/navbar/';
+import ButtonUp from './layaut/ButtonUp';
+// import Footer from './components/footer/';
 import { data } from './utils/dataTechnologiesInfo';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
     	<Navbar />
+      <ButtonUp />
 
-		<Switch>
-    		<Route exact path="/home" component={App} />
-    		<Route path="/project-details/:name" render={({ history, match }) => {
-           
-          const dataProject = data[match.params.name];
+  		<Switch>
+      		<Route exact path="/home" component={App} />
+      		<Route path="/project-details/:name" render={({ history, match }) => {
+             
+            const dataProject = data[match.params.name];
 
-          return (
-              <Project 
-                title={match.params.name}
-                data={dataProject}
-                history={history}
-              />
-           )
-        }} />
+            return (
+                <Project 
+                  title={match.params.name}
+                  data={dataProject}
+                  history={history}
+                />
+             )
+          }} />
 
-        <Redirect from='/' to='/home' />
-		</Switch>
+          <Redirect from='/' to='/home' />
+  		</Switch>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

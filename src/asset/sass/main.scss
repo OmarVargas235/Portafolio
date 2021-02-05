@@ -14,10 +14,12 @@ h1, h2 {
 }
 
 @import './utilities/place-holder.scss';
+@import './utilities/mixin.scss';
 
 @import './components/card.scss';
 @import './components/header.scss';
 @import './components/modal.scss';
+@import './components/arrow_up.scss';
 
 @import './views/header.scss';
 @import './views/navbar.scss';
@@ -27,3 +29,4 @@ h1, h2 {
 @import './views/myWorks.scss';
 @import './views/projects.scss';
 @import './views/hireMe.scss';
+@import './views/footer.scss';

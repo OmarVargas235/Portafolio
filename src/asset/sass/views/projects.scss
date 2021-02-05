@@ -27,7 +27,7 @@
 	}
 
 	.img__technology-use {
-		@extend %img__technology-use;
+		@extend %icon-use;
 
 		&:hover {
 			background-color: #f9004d;

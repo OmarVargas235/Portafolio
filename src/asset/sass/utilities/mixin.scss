@@ -1,0 +1,6 @@
+@mixin backgroundPaddinBorder($background, $border, $py, $px, $color) {
+	background-color: $background;
+	border: 2px solid $border;
+	padding: $py $px;
+	color: $color;
+}
