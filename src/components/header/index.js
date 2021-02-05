@@ -7,6 +7,8 @@ const Header = () => {
 
 	useEffect(() => {
 		
+		/** Animacion **/
+		
 		const tagsP = Array.from(containerCarousel.current.children);
 		let i = 0, n = 0, max = tagsP.length;
 

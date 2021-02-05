@@ -3,7 +3,8 @@ import Header from './components/header/';
 import AboutMe from './components/aboutMe/';
 import MyService from './components/services/';
 import Technologies from './components/technologies/';
-import Works from './components/works';
+import Works from './components/works/';
+import HireMe from './components/contactMe/';
 
 const App = () => (
 	
@@ -12,7 +13,8 @@ const App = () => (
 		<AboutMe />
 		<MyService />
 		<Technologies />
-		<Works />	
+		<Works />
+		<HireMe />
 	</React.Fragment>
 );
 
