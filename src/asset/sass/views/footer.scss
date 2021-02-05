@@ -1,0 +1,18 @@
+.footer {
+	// background-color: #101010;
+	color: #c6c9d8;
+}
+
+.footer__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	@extend %icon-use;
+
+	&:hover {
+		background-color: #f9004d;
+		border: 2px solid #f9004d;
+		transform: scale(.95);
+	}
+}
