@@ -7,8 +7,9 @@ import App from './App';
 import Project from './Project';
 import Navbar from './components/navbar/';
 import ButtonUp from './layaut/ButtonUp';
-// import Footer from './components/footer/';
 import { data } from './utils/dataTechnologiesInfo';
+
+console.log(process.env.REACT_APP_BACKEND_URL)
 
 ReactDOM.render(
   <React.StrictMode>
@@ -30,7 +31,7 @@ ReactDOM.render(
                 />
              )
           }} />
-
+          
           <Redirect from='/' to='/home' />
   		</Switch>
     </Router>

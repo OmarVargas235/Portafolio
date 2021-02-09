@@ -8,8 +8,8 @@ const ButtonUp = () => {
 
 	const handleUp = () => {
 
-		window.scrollTo(0, 0);
 		document.documentElement.style.scrollBehavior = 'smooth';
+		window.scrollTo(0, 0);
 	}
 	
 	return (
