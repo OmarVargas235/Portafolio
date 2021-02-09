@@ -1,0 +1,27 @@
+.alert-email {
+	width: 300px;
+	height: 60px;
+	box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+	border-color: transparent !important;
+	position: fixed !important;
+	z-index: 2;
+	top: 15%;
+	left: -100%;
+	transition: left .5s ease-in;
+
+	p {
+		color: white !important;
+	}
+}
+
+.alerta-show {
+	left: 2%;
+}
+
+.alert-danger {
+	background-color: #D01445 !important;
+}
+
+.alert-success {
+	background-color: #14D016 !important;
+}
