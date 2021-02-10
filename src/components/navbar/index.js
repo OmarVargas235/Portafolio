@@ -3,7 +3,7 @@ import NavbarPage from './NavbarPage';
 import { useFixed } from '../../customHook/useFixed';
 
 const Navbar = () => {
-
+	
 	const menuRef = React.createRef();
 	const isPositionFixed = useFixed(80);
 

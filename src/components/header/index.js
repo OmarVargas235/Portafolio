@@ -6,13 +6,14 @@ const Header = () => {
 	const containerCarousel = React.createRef();
 
 	useEffect(() => {
-		
+	
 		/** Animacion **/
 		
 		const tagsP = Array.from(containerCarousel.current.children);
 		let i = 0, n = 0, max = tagsP.length;
+		let interval, timeout;
 
-		setInterval(() => {
+		interval = setInterval(() => {
 			
 			// i = elmento actual, n = elemento siguiente.
 
@@ -21,7 +22,7 @@ const Header = () => {
 			tagsP[n].classList.add('animate-inside'); // Animacion de la entrada del texto siguiente.
 			tagsP[n].classList.remove('notActive');
 
-			setTimeout(() => {
+			timeout = setTimeout(() => {
 				
 				tagsP[i].classList.remove('animate-outside');
 				tagsP[i].classList.add('notActive');
@@ -36,7 +37,12 @@ const Header = () => {
 
     	}, 2000);
 
-	}, [containerCarousel]);
+    	return () => {
+			clearInterval(interval);
+			clearTimeout(timeout);
+    	}
+
+	}, []);
 
 	return (
 		<HeaderPage 

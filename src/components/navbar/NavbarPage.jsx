@@ -23,23 +23,23 @@ const NavbarPage = ({ menuRef, isPositionFixed }) => (
 		<div className="collapse navbar-collapse" ref={menuRef}>
 			<ul className="nav navbar-nav nav-pills p-3 p-sm-5 p-md-0">
 				<li className="nav-item mb-3 mb-md-0 mr-md-3">
-					<span className="nav-link active" data-toggle="pill">Home</span>
+					<a href="#home" className="nav-link active">Home</a>
 				</li>
 
 				<li className="nav-item mb-3 mb-md-0 mr-md-3">
-					<span className="nav-link" data-toggle="pill">About</span>
+					<a href="#about" className="nav-link">About</a>
 				</li>
 
 				<li className="nav-item mb-3 mb-md-0 mr-md-3">
-					<span className="nav-link" data-toggle="pill">Service</span>
+					<a href="#service" className="nav-link">Service</a>
 				</li>
 
 				<li className="nav-item mb-3 mb-md-0 mr-md-3">
-					<span className="nav-link" data-toggle="pill">Portafolio</span>
+					<a href="#works" className="nav-link">Portafolio</a>
 				</li>
 
 				<li className="nav-item mb-3 mb-md-0 mr-md-3">
-					<span className="nav-link" data-toggle="pill">Contact</span>
+					<a href="#contact" className="nav-link">Contact</a>
 				</li>
 			</ul>
 		</div>

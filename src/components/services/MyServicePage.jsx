@@ -7,7 +7,7 @@ import { ReactComponent as Server } from '../../asset/icons/server.svg';
 
 const MyServicePage = () => (
 	
-	<section className="myService">
+	<section className="myService" id="service">
 		<div className="container py-5">
 			<Title 
 				title='My Service'

@@ -11,6 +11,8 @@ import { data } from './utils/dataTechnologiesInfo';
 
 console.log(process.env.REACT_APP_BACKEND_URL)
 
+document.documentElement.style.scrollBehavior = 'smooth';
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>

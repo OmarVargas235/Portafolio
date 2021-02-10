@@ -5,7 +5,7 @@ import { data } from '../../utils/dataWork';
 
 const WorksPage = () => (
 	
-	<section className="myWorks">
+	<section className="myWorks" id="works">
 		<div className="container pt-5 pb-2">
 			<Title 
 				title='My Recent Work'

@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeaderPage = ({ containerCarousel }) => (
 	
-	<header className="bg-header bg-header_app">
+	<header className="bg-header bg-header_app" id="home">
 		<div className="container">
 			<p className="welcome">WELCOME TO MY PORTFOLIO</p>
 			<h1>

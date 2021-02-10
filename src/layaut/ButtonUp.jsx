@@ -6,11 +6,7 @@ const ButtonUp = () => {
 	
 	const isPositionFixed = useFixed(110);
 
-	const handleUp = () => {
-	
-		document.documentElement.style.scrollBehavior = 'smooth';
-		setTimeout(() => window.scrollTo(0, 0), 1);
-	}
+	const handleUp = () => window.scrollTo(0, 0);
 	
 	return (
 		<div 

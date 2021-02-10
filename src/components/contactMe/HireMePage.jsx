@@ -4,7 +4,7 @@ import Alert from '../../layaut/Alert'
 
 const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingEmail }) => (
 	
-	<section className="hireMe">
+	<section className="hireMe" id="contact">
 		<div className="container py-5 w-50">
 			<Title 
 				title='Hire Me.'

@@ -5,7 +5,7 @@ import Me from '../../asset/images/me.png';
 
 const AboutMePage = ({ isSkills, setIsSkills }) => (
 	
-	<section className="abotMe">
+	<section className="abotMe" id="about">
 		<div className="container pt-5">
 			<div className="row py-5">
 				<div className="col-12 col-md-6 d-flex align-items-center">
