@@ -2,7 +2,7 @@
 	background-color: #191919;
 
 	.form-control {
-		@include backgroundPaddinBorder(transparent, hsla(0,0%,100%,.2), .8rem, 1rem, null);
+		@include backgroundPaddinBorder(transparent, hsla(0,0%,100%,.2), 1.3rem, 1rem, null);
 
 		&:focus {
 			@include backgroundPaddinBorder(transparent, hsla(0,0%,100%,.2), null, null, null);

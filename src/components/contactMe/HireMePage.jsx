@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../../layaut/Title';
 import Alert from '../../layaut/Alert'
 
-const HireMePage = ({ handleChange, handleSubmit, messagesAlert }) => (
+const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingEmail }) => (
 	
 	<section className="hireMe">
 		<div className="container py-5 w-50">
@@ -12,7 +12,7 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert }) => (
 			/>
 			
 			<p>I am available for freelance work. Connect with me via phone:
-				<span className="text-light font-weight-bold"> (713)-489-3015</span> or email: <span className="text-light font-weight-bold">ov1356272@gmail.com</span>
+				<span className="text-light font-weight-bold"> (+57)-311-667-2266</span> or email: <span className="text-light font-weight-bold">ov1356272@gmail.com</span>
 			</p>
 
 			<form 
@@ -82,11 +82,21 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert }) => (
 				<button 
 					className="btn btn-color font-weight-bold mt-3"
 					type="submit"
-					disabled={ Object.keys(messagesAlert).length > 0 }
+					disabled={ Object.keys(messagesAlert).length > 0 || loadingEmail }
 				>SUBMIT</button>
 			</form>
 		</div>
-	
+
+		{
+			loadingEmail ? <Alert 
+					typeAlert='alert-success'
+					messageAlert='Loading email...'
+					index={0}
+					sendLoading={true}
+				/>
+			: null 
+		}
+
 		{
 			Object.keys(messagesAlert).length > 0 
 			? messagesAlert.message.map((messageAlert, index) => (
@@ -94,7 +104,7 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert }) => (
 					key={index}
 					typeAlert={messagesAlert.ok}
 					messageAlert={messageAlert}
-					index={index} 
+					index={index}
 				/> 
 			))
 			: null

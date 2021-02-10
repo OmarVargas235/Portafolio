@@ -4,6 +4,7 @@ import HireMePage from './HireMePage';
 const HireMe = () => {
 	
 	const [messagesAlert, setMessagesAlert] = useState({});
+	const [loadingEmail, setLoadingEmail] = useState(false);
 	const [data, setData] = useState({
 		name: '',
 		email: '',
@@ -25,6 +26,7 @@ const HireMe = () => {
 
 		const url = process.env.REACT_APP_BACKEND_URL;
 		
+		// Enviando el email
 		fetch(url, {
 			method: 'POST',
 			headers: {
@@ -37,9 +39,21 @@ const HireMe = () => {
 		.then(res => {
 
 			setMessagesAlert(res);
-			setTimeout(() => setMessagesAlert({}), 2700);
+			setTimeout(() => setMessagesAlert({}), 2700); // Quitando el componente alerta
+			setLoadingEmail(false); // Quitando el componente alert
 		})
-		.catch(err => console.log("err!!!!!!!!", err));
+		.catch(() => {
+
+			const err = {
+				ok: false,
+				message: ['A problem has occurred']
+			}
+
+			setMessagesAlert(err);
+			setTimeout(() => setMessagesAlert({}), 2700); // Quitando el componente alerta
+		});
+
+		setLoadingEmail(true);
 	}
 
 	return (
@@ -47,6 +61,7 @@ const HireMe = () => {
 			handleChange={handleChange}
 			handleSubmit={handleSubmit}
 			messagesAlert={messagesAlert}
+			loadingEmail={loadingEmail}
 		/>
 	)
 }

@@ -7,9 +7,9 @@ const ButtonUp = () => {
 	const isPositionFixed = useFixed(110);
 
 	const handleUp = () => {
-
+	
 		document.documentElement.style.scrollBehavior = 'smooth';
-		window.scrollTo(0, 0);
+		setTimeout(() => window.scrollTo(0, 0), 1);
 	}
 	
 	return (
