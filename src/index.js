@@ -9,8 +9,6 @@ import Navbar from './components/navbar/';
 import ButtonUp from './layaut/ButtonUp';
 import { data } from './utils/dataTechnologiesInfo';
 
-console.log(process.env.REACT_APP_BACKEND_URL)
-
 document.documentElement.style.scrollBehavior = 'smooth';
 
 ReactDOM.render(

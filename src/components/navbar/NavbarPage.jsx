@@ -1,19 +1,29 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import Icon from '../../asset/images/icon.png';
 import { ReactComponent as GitHubIcon } from '../../asset/icons/github.svg';
 import { ReactComponent as Linkedin } from '../../asset/icons/linkedin.svg';
 import { ReactComponent as BtnToggle } from '../../asset/icons/btn_toggle.svg';
 
-const NavbarPage = ({ menuRef, isPositionFixed }) => (
+const NavbarPage = ({ menuRef, isPositionFixed, history }) => (
 	
 	<nav className={`navbar navbar-expand-md bg-dark w-100 pb-md-0 px-5 ${isPositionFixed ? 'navbarFixed' : ''}`}>
 		<span className="navbar-brand mr-4">
-			<img src={Icon} alt="brand" />
+			<img 
+				src={Icon} 
+				alt="brand" 
+				onClick={() => history.push('/home')} 
+			/>
 		</span>
 		
 		<div className="d-flex order-md-1">
 			<div className="mr-4 mr-md-0 d-flex align-items-center">
-				<span className="icon"> <GitHubIcon className="mr-2" /> </span>
+				<a 
+					href="https://github.com/OmarVargas235?tab=repositories"
+					rel="noopener noreferrer"
+					target="_blank" 
+					className="icon"
+					> <GitHubIcon className="mr-2" /> </a>
 				<span className="icon"> <Linkedin /> </span>
 			</div>
 			
@@ -46,4 +56,4 @@ const NavbarPage = ({ menuRef, isPositionFixed }) => (
 	</nav>
 )
 
-export default NavbarPage;
+export default withRouter(NavbarPage);

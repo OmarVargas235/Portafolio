@@ -5,9 +5,14 @@ import { ReactComponent as Linkedin } from '../asset/icons/linkedin.svg';
 const FooterPage = ({ color }) => (
 	<footer style={{backgroundColor: color}} className="p-4 footer d-flex justify-content-between">
 		<span className="d-flex">
-			<div className="footer__icon mr-2">
+			<a 
+				className="footer__icon mr-2" 
+				href="https://github.com/OmarVargas235?tab=repositories"
+				rel="noopener noreferrer"
+				target="_blank"
+			>
 				<Github />
-			</div>
+			</a>
 
 			<div className="footer__icon">
 				<Linkedin />

@@ -13,6 +13,14 @@ h1, h2 {
 	color: white !important;
 }
 
+a {
+	color: rgba(198,201,216,.75) !important;
+
+	&:hover {
+		color: rgba(198,201,216,.75) !important;
+	}
+}
+
 @import './utilities/place-holder.scss';
 @import './utilities/mixin.scss';
 

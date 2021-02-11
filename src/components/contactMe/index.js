@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import HireMePage from './HireMePage';
 
+console.log(process.env.REACT_APP_BACKEND_URL)
+
 const HireMe = () => {
 	
 	const [messagesAlert, setMessagesAlert] = useState({});
@@ -24,7 +26,7 @@ const HireMe = () => {
 		
 		e.preventDefault();
 
-		const url = process.env.REACT_APP_BACKEND_URL;
+		const url = process.env.REACT_APP_BACKEND_URL + '/send-email';
 		
 		// Enviando el email
 		fetch(url, {
@@ -33,7 +35,8 @@ const HireMe = () => {
 				'Content-Type': 'application/x-www-form-urlencoded',
 				'Access-Control-Allow-Origin': '*'
 			},
-			body: JSON.stringify(data) 
+			body: JSON.stringify(data),
+			mode: 'cors',
 		})
 		.then(res => res.json())
 		.then(res => {
@@ -48,9 +51,10 @@ const HireMe = () => {
 				ok: false,
 				message: ['A problem has occurred']
 			}
-
+		
 			setMessagesAlert(err);
 			setTimeout(() => setMessagesAlert({}), 2700); // Quitando el componente alerta
+			setLoadingEmail(false); // Quitando el componente alert
 		});
 
 		setLoadingEmail(true);
