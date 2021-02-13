@@ -9,7 +9,7 @@ const AboutProjectsPage = ({ data }) => (
 
 			<p className="mt-4">{data.about}</p>
 
-			<p>For more information go to: 
+			<p>Below you can see a demo of the project: 
 				<a 
 					href={data.url} 
 					target="_blank"

@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../../layaut/Title';
 import Alert from '../../layaut/Alert'
 
-const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingEmail }) => (
+const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingSendEmail }) => (
 	
 	<section className="hireMe" id="contact">
 		<div className="container py-5 w-50">
@@ -82,13 +82,13 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingEmail })
 				<button 
 					className="btn btn-color font-weight-bold mt-3"
 					type="submit"
-					disabled={ Object.keys(messagesAlert).length > 0 || loadingEmail }
+					disabled={ Object.keys(messagesAlert).length > 0 || loadingSendEmail }
 				>SUBMIT</button>
 			</form>
 		</div>
 
 		{
-			loadingEmail ? <Alert 
+			loadingSendEmail ? <Alert 
 					typeAlert='alert-success'
 					messageAlert='Loading email...'
 					index={0}

@@ -7,7 +7,7 @@ import App from './App';
 import Project from './Project';
 import Navbar from './components/navbar/';
 import ButtonUp from './layaut/ButtonUp';
-import { data } from './utils/dataTechnologiesInfo';
+import { data } from './utils/dataApp';
 
 document.documentElement.style.scrollBehavior = 'smooth';
 

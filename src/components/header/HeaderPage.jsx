@@ -3,7 +3,7 @@ import React from 'react';
 const HeaderPage = ({ containerCarousel }) => (
 	
 	<header className="bg-header bg-header_app" id="home">
-		<div className="container">
+		<div className="container-md">
 			<p className="welcome">WELCOME TO MY PORTFOLIO</p>
 			<h1>
 				Hi, I’m Omar

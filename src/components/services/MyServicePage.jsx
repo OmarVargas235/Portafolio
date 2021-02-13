@@ -26,8 +26,8 @@ const MyServicePage = () => (
 				<div className="mt-4 mt-sm-0 col-sm-6 col-md-4">
 					<Card 
 						Icon={Desktop}
-						title='Website Development'
-						text='Build Websites, portfolios and ecommerce sites based on client requirements.'
+						title='Fron-tend'
+						text='Create websites, applications and commerce sites, where different technologies are used on the client side for the interaction with the website.'
 					/>
 				</div>
 				

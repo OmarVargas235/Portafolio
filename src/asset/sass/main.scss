@@ -21,6 +21,12 @@ a {
 	}
 }
 
+section {
+	p {
+		font-size: 1.2rem;
+	}
+}
+
 @import './utilities/place-holder.scss';
 @import './utilities/mixin.scss';
 

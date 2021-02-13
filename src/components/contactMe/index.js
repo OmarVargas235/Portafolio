@@ -6,7 +6,7 @@ console.log(process.env.REACT_APP_BACKEND_URL)
 const HireMe = () => {
 	
 	const [messagesAlert, setMessagesAlert] = useState({});
-	const [loadingEmail, setLoadingEmail] = useState(false);
+	const [loadingSendEmail, setLoadingSendEmail] = useState(false);
 	const [data, setData] = useState({
 		name: '',
 		email: '',
@@ -43,7 +43,7 @@ const HireMe = () => {
 
 			setMessagesAlert(res);
 			setTimeout(() => setMessagesAlert({}), 2700); // Quitando el componente alerta
-			setLoadingEmail(false); // Quitando el componente alert
+			setLoadingSendEmail(false); // Quitando el componente alert con el mensaje "Loading email..."
 		})
 		.catch(() => {
 
@@ -54,10 +54,10 @@ const HireMe = () => {
 		
 			setMessagesAlert(err);
 			setTimeout(() => setMessagesAlert({}), 2700); // Quitando el componente alerta
-			setLoadingEmail(false); // Quitando el componente alert
+			setLoadingSendEmail(false); // Quitando el componente alert con el mensaje "Loading email..."
 		});
 
-		setLoadingEmail(true);
+		setLoadingSendEmail(true);
 	}
 
 	return (
@@ -65,7 +65,7 @@ const HireMe = () => {
 			handleChange={handleChange}
 			handleSubmit={handleSubmit}
 			messagesAlert={messagesAlert}
-			loadingEmail={loadingEmail}
+			loadingSendEmail={loadingSendEmail}
 		/>
 	)
 }

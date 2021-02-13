@@ -31,8 +31,8 @@ import tatuluis_4 from '../asset/images/tatuluis_4.png';
 
 export const data = {
 	'cancha': {
-		description: 'soccer field made in reactJs and sass',
-		about: 'This app allows you to select 11 starting players and 2 substitutes, once you are in the starting or substitutions you can click on the image and click them to remove them.',
+		description: 'soccer field made in react Js and sass',
+		about: 'This application allows you to select 11 starting players and 2 substitutes, once they are on the field you can click on the x in the image and remove them.',
 		technologiesUsed: [sass, react],
 		gallery: [cancha, cancha_1, cancha_2],
 		moreProjects: [{img: exchange, name: 'Exchange App', params: 'exchange'}, {img: tatuluis, name: 'Tatuluis App', params: 'tatuluis'}],

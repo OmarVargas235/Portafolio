@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from '../container/modal';
 
-const GalleryPage = ({ data, isImgActiveCarousel, setIsImgActiveCarousel }) => (
+const GalleryPage = ({ data, imgCarouselActive, setImgCarouselActive }) => (
 
 	<React.Fragment>
 		<h2 className="pb-4">Gallery</h2>
@@ -16,11 +16,11 @@ const GalleryPage = ({ data, isImgActiveCarousel, setIsImgActiveCarousel }) => (
 							alt="img" 
 							data-toggle="modal" 
 							data-target={`#modal-${index}`}
-							onClick={ () => setIsImgActiveCarousel(index) }
+							onClick={ () => setImgCarouselActive(index) }
 						/>
 						
 						{
-							isImgActiveCarousel === index 
+							imgCarouselActive === index 
 							? <Modal 
 								index={index}
 								data={data}

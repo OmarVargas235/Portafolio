@@ -11,7 +11,11 @@
 		cursor: pointer;
 	}
 
-	svg {
+	a {
+		text-decoration: none !important;
+	}
+
+	svg, .cv {
 		fill: #D2D2D2;
 		transform: translateY(0px);
 		width: 20px;
@@ -24,10 +28,16 @@
 	.icon {
 		cursor: pointer;
 
-		&:hover svg {
+		&:hover svg, &:hover p {
 			fill: white;
 			transform: translateY(-3px);
 		}
+	}
+
+	.cv {
+		width: 25px;
+		height: 25px;
+		color: white;
 	}	
 
 	&.bg-dark {
