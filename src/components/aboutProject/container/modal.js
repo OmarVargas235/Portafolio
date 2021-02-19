@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import ModalPage from '../components/ModalPage';
 
-const Modal = ({ index, data }) => {
+const Modal = ({ index, data, setImgCarouselActive }) => {
 
 	const [fullscreen, setFullscreen] = useState(false);
 	const [numberImg, setNumberImg] = useState(index);
+	const [disabledArrow, setDisabledArrow] = useState(false);
 
 	const modalRef = React.createRef();
 	
@@ -17,6 +18,8 @@ const Modal = ({ index, data }) => {
 
 	const nextOrPrevImg = (nextOrPrev) => {
 		
+		if (disabledArrow) return;
+
 		const nImg = data.gallery.length;
 		let posImg = numberImg;
 		nextOrPrev === 'next' ? posImg += 1 : posImg -= 1;
@@ -24,6 +27,10 @@ const Modal = ({ index, data }) => {
 		if (posImg === -1) setNumberImg(nImg - 1); // Si es la primera imagen el contador toma el numero de la ultima imagen
 		else if (posImg === nImg) setNumberImg(0); // Si es la ultima imagen reinicia el contador
 		else setNumberImg(posImg);
+
+		// Los 600ms es el tiempo que tarda en pasar de una imagen a otra en el carrusel
+		setDisabledArrow(true);
+		setTimeout(() => setDisabledArrow(false), 600);
 	}
 
 	return (
@@ -35,6 +42,7 @@ const Modal = ({ index, data }) => {
 			modalRef={modalRef}
 			numberImg={numberImg}
 			nextOrPrevImg={nextOrPrevImg}
+			setImgCarouselActive={setImgCarouselActive}
 		/>
 	)
 }

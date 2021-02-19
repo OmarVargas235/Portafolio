@@ -6,7 +6,7 @@ import { ReactComponent as Close } from '../../../asset/icons/close.svg';
 import { ReactComponent as ArrowLeft } from '../../../asset/icons/arrow_left.svg';
 import { ReactComponent as ArrowRight } from '../../../asset/icons/arrow_right.svg';
 
-const ModalPage = ({ index, data, fullscreen, setFullscreen, modalRef, numberImg, nextOrPrevImg }) => (
+const ModalPage = ({ index, data, fullscreen, setFullscreen, modalRef, numberImg, nextOrPrevImg, setImgCarouselActive }) => (
 									
 	<div className="modal fade pr-0" id={`modal-${index}`} ref={modalRef}>
 		<div className="modal-dialog">
@@ -16,7 +16,12 @@ const ModalPage = ({ index, data, fullscreen, setFullscreen, modalRef, numberImg
 						fullscreen ? <FullScreen2 onClick={() => setFullscreen(false)} /> 
 						: <FullScreen1 onClick={() => setFullscreen(true)} />
 					}
-					<Close type="button" className="ml-3" data-dismiss="modal" />
+					<Close 
+						type="button" 
+						className="ml-3" 
+						data-dismiss="modal"
+						onClick={() => setTimeout(() => setImgCarouselActive(numberImg), 200)}
+					/>
 				</div>
 
 				<div className="modal-body px-5">

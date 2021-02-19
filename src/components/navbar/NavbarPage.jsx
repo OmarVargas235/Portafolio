@@ -1,7 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Icon from '../../asset/images/icon.png';
-import cv from '../../asset/cv.pdf';
 import { ReactComponent as GitHubIcon } from '../../asset/icons/github.svg';
 import { ReactComponent as Linkedin } from '../../asset/icons/linkedin.svg';
 import { ReactComponent as BtnToggle } from '../../asset/icons/btn_toggle.svg';
@@ -19,14 +18,6 @@ const NavbarPage = ({ menuRef, isPositionFixed, history }) => (
 		
 		<div className="d-flex order-md-1">
 			<div className="mr-4 mr-md-0 d-flex align-items-center">
-			    <a 
-			    	href={cv}
-			    	rel="noopener noreferrer"
-			    	target="_blank"
-			    	className="icon mr-1">
-			    	<p className="cv font-weight-bold mb-0">CV</p>
-			    </a>
-				
 				<a 
 					href="https://github.com/OmarVargas235?tab=repositories"
 					rel="noopener noreferrer"

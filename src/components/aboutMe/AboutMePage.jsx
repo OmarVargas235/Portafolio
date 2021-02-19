@@ -1,7 +1,7 @@
 import React from 'react';
 import SkillsPage from './SkillsPage';
 import EducationPage from './EducationPage';
-import Me from '../../asset/images/me.png';
+import Me from '../../asset/images/me_me.png';
 
 const AboutMePage = ({ isSkills, setIsSkills }) => (
 	

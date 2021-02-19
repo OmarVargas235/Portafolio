@@ -24,6 +24,7 @@ const GalleryPage = ({ data, imgCarouselActive, setImgCarouselActive }) => (
 							? <Modal 
 								index={index}
 								data={data}
+								setImgCarouselActive={setImgCarouselActive}
 							/> : null
 						}
 					</React.Fragment>
