@@ -35,7 +35,7 @@
 @media (max-width: 767px) {
 	.bg-header {
 		h1, .container-carousel {
-			font-size: 7vw;
+			font-size: 6.9vw;
 		}
 	}
 
@@ -54,15 +54,8 @@
 
 @media (max-width: 499px) {
 	.container-md {
-		padding-right: 2.3rem;
-		padding-left: 2.3rem;
-	}
-}
-
-@media (max-width: 460px) {
-	.container-md {
-		padding-right: 2rem;
-		padding-left: 2rem;
+		padding-right: 1.9rem;
+		padding-left: 1.9rem;
 	}
 }
 
@@ -70,5 +63,12 @@
 	.container-md {
 		padding-right: 1.6rem;
 		padding-left: 1.6rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.container-md {
+		padding-right: 1.4rem;
+		padding-left: 1.4rem;
 	}
 }
