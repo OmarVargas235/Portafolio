@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GalleryPage from '../components/GalleryPage';
 
-const Gallery = ({ data }) => {
+const Gallery = ({ data, isEN }) => {
 
 	const [imgCarouselActive, setImgCarouselActive] = useState(0);
 
@@ -10,6 +10,7 @@ const Gallery = ({ data }) => {
 			data={data}
 			imgCarouselActive={imgCarouselActive}
 			setImgCarouselActive={setImgCarouselActive}
+			isEN={isEN}
 		/>
 	)
 }

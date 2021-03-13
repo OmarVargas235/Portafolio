@@ -2,17 +2,16 @@ import React from 'react';
 import Title from '../../layaut/Title';
 import Alert from '../../layaut/Alert'
 
-const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingSendEmail }) => (
-	
+const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingSendEmail, isEN, translate }) => (
 	<section className="hireMe" id="contact">
 		<div className="container py-5 w-50">
 			<Title 
-				title='Hire Me.'
+				title={`${isEN ? translate('TITLE') : translate('TITULO')}`}
 				text=''
 			/>
 			
-			<p>I am available for freelance work. Connect with me via phone:
-				<span className="text-light font-weight-bold"> (+57)-311-667-2266</span> or email: <span className="text-light font-weight-bold">ov1356272@gmail.com</span>
+			<p>{isEN ? translate('DESCRIPTION') : translate('DESCRIPCION')}
+				<span className="text-light font-weight-bold"> (+57)-311-667-2266</span> {isEN ? 'or email'  : 'o correo'}: <span className="text-light font-weight-bold">ov1356272@gmail.com</span>
 			</p>
 
 			<form 
@@ -25,7 +24,7 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingSendEmai
 						name="name"
 						type="text" 
 						className="form-control" 
-						placeholder="Your Name *"
+						placeholder={`${isEN ? translate('placeholderName') : translate('placeholderNombre')} *`}
 						autoComplete="off"
 						onChange={handleChange}
 						required			 
@@ -40,7 +39,7 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingSendEmai
 						name="email"
 						type="email" 
 						className="form-control" 
-						placeholder="Your Email *"
+						placeholder={`${isEN ? translate('placeholderEmail') : translate('placeholderCorreo')} *`}
 						onChange={handleChange}
 						required
 					/>
@@ -54,7 +53,7 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingSendEmai
 						name="subject"
 						type="text" 
 						className="form-control" 
-						placeholder="Write a Subect"
+						placeholder={`${isEN ? translate('placeholderSubject') : translate('placeholderTema')}`}
 						autoComplete="off"
 						onChange={handleChange}
 						required
@@ -69,7 +68,7 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingSendEmai
 						name="message" 
 						rows="2" 
 						className="form-control" 
-						placeholder="Your Message"
+						placeholder={`${isEN ? translate('placeholderMessage') : translate('placeholderMensaje')}`}
 						autoComplete="off"
 						onChange={handleChange}
 						required
@@ -83,7 +82,7 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingSendEmai
 					className="btn btn-color font-weight-bold mt-3"
 					type="submit"
 					disabled={ Object.keys(messagesAlert).length > 0 || loadingSendEmail }
-				>SUBMIT</button>
+				>{isEN ? 'SUBMIT' : 'ENVIAR'}</button>
 			</form>
 		</div>
 

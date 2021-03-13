@@ -3,13 +3,12 @@ import Title from '../../layaut/Title';
 import CardWorks from '../../layaut/CardWorks';
 import { data } from '../../utils/dataWork';
 
-const WorksPage = () => (
-	
+const WorksPage = ({ isEN, translate }) => (
 	<section className="myWorks" id="works">
 		<div className="container pt-5 pb-2">
 			<Title 
-				title='My Recent Work'
-				text='I am going to show the projects that I have done during this time. Some of them are personal others for some clients.'
+				title={`${isEN ? translate('TITLE') : translate('TITULO')}`}
+				text={`${isEN ? translate('DESCRIPTION') : translate('DESCRIPCION')}`}
 			/>
 
 			<div className="row container-cards">
@@ -18,6 +17,7 @@ const WorksPage = () => (
 						<CardWorks 
 							key={card.id}
 							data={card}
+							isEN={isEN}
 						/>
 					))
 				}

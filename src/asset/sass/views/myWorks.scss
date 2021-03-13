@@ -17,6 +17,12 @@
 		left: calc(50% - 99px);
 		top: 50%;
 	}
+	
+	.card-bg-5 {
+		+.card-body {
+			left: calc(50% - 110px);
+		}
+	}
 
 	.btn {
 		border: 2px solid rgba(255, 255, 255, 0.3);
@@ -46,12 +52,12 @@
 		height: 220px;
 	}
 	
-	@for $i from 1 through 4 {
+	@for $i from 1 through 5 {
 
 		.card-bg-#{$i} {
 			background-image: url('../images/presentacion_#{$i}.png');
 
-			@if $i == 2 { opacity: .4; }
+			@if $i == 2 or $i == 5 { opacity: .4; }
 		}
 	}
 }

@@ -1,21 +1,21 @@
 import React from 'react';
 
-const SkillsPage = () => (
+const SkillsPage = ({ isEN, translate }) => (
 
 	<article>
 		<aside className="mb-3">
 			<p className="mb-1">HTML, CSS, SASS, STYLED-COMPONENTS, BOOSTRAP. - Layout designer</p>
-			<p>Layout of web pages and applications</p>
+			<p>{isEN ? translate('LAYAUT') : translate('DISEÑO')}</p>
 		</aside>
 
 		<aside className="mb-3">
 			<p className="mb-1">React - Frontend</p>
-			<p>I use React for interactivity with the frontend</p>
+			<p>{isEN ? translate('SKILL_REACT') : translate('HABILIDAD_REACT')}</p>
 		</aside>
 
 		<aside>
 			<p className="mb-1">Node, Mongo, Express. - Backend</p>
-			<p>Development using these technologies to create the backend of the applications</p>
+			<p>{isEN ? translate('SKILL_BACKEND') : translate('HABILIDAD_BACKEND')}</p>
 		</aside>
 	</article>
 )

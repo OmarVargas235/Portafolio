@@ -3,7 +3,7 @@ import SkillsPage from './SkillsPage';
 import EducationPage from './EducationPage';
 import Me from '../../asset/images/me_me.png';
 
-const AboutMePage = ({ isSkills, setIsSkills }) => (
+const AboutMePage = ({ isSkills, setIsSkills, isEN, translate }) => (
 	
 	<section className="abotMe" id="about">
 		<div className="container pt-5">
@@ -13,30 +13,32 @@ const AboutMePage = ({ isSkills, setIsSkills }) => (
 				</div>
 				
 				<div className="col-12 col-md-6 mt-4 mt-md-0 d-flex flex-column justify-content-center">	
-					<h2 className="mb-4">About Me</h2>
+					<h2 className="mb-4">{isEN ? translate('TITLE') : translate('TITULO')}</h2>
 				
-					<p>I am Software Developer in the north santander Colombia. Lastly, I have been working in React, developing personal apps and projects. I have knowledge in JavaScript, HTML, Css, Node and many others Frameworks. I like ReactJS library for frontend.
-					</p>
+					<p>{isEN ? translate('DESCRIPTION') : translate('DESCRIPCION')}</p>
 				
 					<ul className="nav navbar-nav nav-pills mb-4 mt-0 my-md-4 d-flex flex-row">
 						<li className="nav-item ml-0">
 							<span 
-								className="nav-link pb-2 active"
+								className={`nav-link pb-2 active ${!isEN && 'link-es'}`}
 								data-toggle="pill"
 								onClick={() => setIsSkills(true)}
-							>Main skills</span>
+							>{isEN ? translate('MAIN_SKILLS') : translate('HABILIDADES')}</span>
 						</li>
 
 						<li className="nav-item ml-4">
 							<span 
-								className="nav-link pb-2" 
+								className={`nav-link pb-2 ${!isEN && 'link-es'}`}
 								data-toggle="pill"
 								onClick={() => setIsSkills(false)}
-							>Education</span>
+							>{isEN ? translate('EDUCATION') : translate('EDUCACION')}</span>
 						</li>
 					</ul>
 
-					{ isSkills ? <SkillsPage /> : <EducationPage /> }
+					{ isSkills 
+						? <SkillsPage isEN={isEN} translate={translate} /> 
+						: <EducationPage /> 
+					}
 				</div>
 			</div>
 		</div>

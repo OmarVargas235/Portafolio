@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ModalPage from '../components/ModalPage';
 
-const Modal = ({ index, data, setImgCarouselActive }) => {
+const Modal = ({ index, data, setImgCarouselActive, isEN }) => {
 
 	const [fullscreen, setFullscreen] = useState(false);
 	const [numberImg, setNumberImg] = useState(index);
@@ -43,6 +43,7 @@ const Modal = ({ index, data, setImgCarouselActive }) => {
 			numberImg={numberImg}
 			nextOrPrevImg={nextOrPrevImg}
 			setImgCarouselActive={setImgCarouselActive}
+			isEN={isEN}
 		/>
 	)
 }

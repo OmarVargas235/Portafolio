@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CardWorks = ({ data }) => (
+const CardWorks = ({ data, isEN }) => (
 	
 	<div className="col-12 col-sm-6 col-lg-4 mb-4">
 		<div className="card py-5 px-4">	
@@ -14,7 +14,7 @@ const CardWorks = ({ data }) => (
 					<Link 
 						className="btn" 
 						to={`/project-details/${data.name.toLowerCase()}`}
-					>VIEW DETAILS</Link>
+					>{isEN ? 'VIEW DETAILS' : 'VER DETALLES'}</Link>
 				</div>
 			</div> 
 		</div>

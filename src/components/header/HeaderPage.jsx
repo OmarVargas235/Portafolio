@@ -1,22 +1,22 @@
 import React from 'react';
 
-const HeaderPage = ({ containerCarousel }) => (
+const HeaderPage = ({ containerCarousel, isEN, translate }) => (
 	
-	<header className="bg-header bg-header_app" id="home">
+	<header className={`${isEN ? 'bg-header' : 'bg-header-es'} bg-header_app`} id="home">
 		<div className="container-md">
-			<p className="welcome">WELCOME TO MY PORTFOLIO</p>
+			<p className="welcome">{isEN ? translate('WELCOME') : translate('BIENVENIDO')}</p>
 			<h1>
-				Hi, I’m Omar
+				{isEN ? translate('HI') : translate('HOLA')}
 
 				<div 
 					className="container-carousel d-flex flex-column justify-content-center" 
 					id="carousel" 
 					ref={containerCarousel}
 				>
-					<p>{`<Full stack Developer>`}</p>
-					<p className="notActive">{`<Frontend Developer/>`}</p>
-					<p className="notActive">{`<Backend Developer/>`}</p>
-					<p className="notActive">{`</Full stack Developer>`}</p>
+					<p>{`<${isEN ? translate('DEVELOPER') : translate('DESARROLLADOR')}>`}</p>
+					<p className="notActive">{`<${isEN ? translate('DEVELOPER_FRONTEND') : translate('DESARROLLADOR_FRONTEND')}/>`}</p>
+					<p className="notActive">{`<${isEN ? translate('DEVELOPER_BACKEND') : translate('DESARROLLADOR_BACKEND')}/>`}</p>
+					<p className="notActive">{`</${isEN ? translate('DEVELOPER') : translate('DESARROLLADOR')}>`}</p>
 				</div>
 			</h1>
 			

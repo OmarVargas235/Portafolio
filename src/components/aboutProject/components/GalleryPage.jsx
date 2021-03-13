@@ -1,10 +1,10 @@
 import React from 'react';
 import Modal from '../container/modal';
 
-const GalleryPage = ({ data, imgCarouselActive, setImgCarouselActive }) => (
+const GalleryPage = ({ data, imgCarouselActive, setImgCarouselActive, isEN }) => (
 
 	<React.Fragment>
-		<h2 className="pb-4">Gallery</h2>
+		<h2 className="pb-4">{isEN ? 'Gallery' : 'Galería'}</h2>
 
 		<aside className="mt-4">
 			{
@@ -25,6 +25,7 @@ const GalleryPage = ({ data, imgCarouselActive, setImgCarouselActive }) => (
 								index={index}
 								data={data}
 								setImgCarouselActive={setImgCarouselActive}
+								isEN={isEN}
 							/> : null
 						}
 					</React.Fragment>

@@ -1,9 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import HeaderPage from './HeaderPage';
+import { LanguageContext } from '../../context/LanguageContext';
+import { useTranslate } from "react-translate";
 
 const Header = () => {
+	
+	const t = useTranslate("Header");
 
 	const containerCarousel = React.createRef();
+
+	const { isEN } = useContext( LanguageContext );
 
 	useEffect(() => {
 	
@@ -47,6 +53,8 @@ const Header = () => {
 	return (
 		<HeaderPage 
 			containerCarousel={containerCarousel}
+			isEN={isEN}
+			translate={t}
 		/>
 	)
 }

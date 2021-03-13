@@ -19,4 +19,9 @@ export const data = [
 		techonologies: 'React',
 		id: 4,
 	},
+	{
+		name: 'Pizzeria-app',
+		techonologies: 'React, Node',
+		id: 5,
+	},
 ]

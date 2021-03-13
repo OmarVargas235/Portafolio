@@ -1,20 +1,20 @@
 import React from 'react';
 import Gallery from './container/gallery';
 
-const AboutProjectsPage = ({ data }) => (
+const AboutProjectsPage = ({ data, isEN, translate }) => (
 
 	<section className="about">
 		<div className="container py-5 px-5">
-			<h2 className="pb-4">About</h2>
+			<h2 className="pb-4">{isEN ? translate('ABOUT') : translate('SOBRE')}</h2>
 
 			<p className="mt-4">{data.about}</p>
 
-			<p>Below you can see a demo of the project: 
+			<p>{isEN ? translate('DEMO') : translate('DEMOSTRACION')}
 				<a 
 					href={data.url} 
 					target="_blank"
 					rel="noopener noreferrer"
-				>Project site</a>
+				>{isEN ? translate('SITE_PROJECT') : translate('SITIO_PROYECTO')}</a>
 			</p>
 
 			<aside className="mb-5">
@@ -24,7 +24,7 @@ const AboutProjectsPage = ({ data }) => (
 							key={index}
 							src={technologies} 
 							alt="img" 
-							className="img__technology-use mr-2"
+							className="img__technology-use mr-2 mt-1"
 						/>
 					))
 				}
@@ -32,6 +32,7 @@ const AboutProjectsPage = ({ data }) => (
 			
 			<Gallery 
 				data={data}
+				isEN={isEN}
 			/>
 		</div>
 	</section>

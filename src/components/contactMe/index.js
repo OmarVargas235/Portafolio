@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import HireMePage from './HireMePage';
+import { LanguageContext } from '../../context/LanguageContext';
+import { useTranslate } from "react-translate";
 
 console.log(process.env.REACT_APP_BACKEND_URL)
 
 const HireMe = () => {
 	
+	const t = useTranslate("HireMe");	
+	const { isEN } = useContext( LanguageContext );
+
 	const [messagesAlert, setMessagesAlert] = useState({});
 	const [loadingSendEmail, setLoadingSendEmail] = useState(false);
 	const [data, setData] = useState({
@@ -66,6 +71,8 @@ const HireMe = () => {
 			handleSubmit={handleSubmit}
 			messagesAlert={messagesAlert}
 			loadingSendEmail={loadingSendEmail}
+			isEN={isEN}
+			translate={t}
 		/>
 	)
 }

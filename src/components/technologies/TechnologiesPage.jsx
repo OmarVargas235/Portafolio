@@ -2,13 +2,12 @@ import React from 'react';
 import Title from '../../layaut/Title';
 import { data } from '../../utils/dataTechnologies';
 
-const TechnologiesPage = () => (
-	
+const TechnologiesPage = ({ isEN, translate }) => (
 	<section className="technologies">
 		<div className="container py-5">
 			<Title 
-				title='Frameworks and Technologies'
-				text='These are some of the libraries, technologies and languages ​​that I have used in the projects that I have done.'
+				title={`${isEN ? translate('TITLE') : translate('TITULO')}`}
+				text={`${isEN ? translate('DESCRIPTION') : translate('DESCRIPCION')}`}
 			/>
 			
 			<div className="grid-technologies mt-5">

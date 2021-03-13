@@ -6,7 +6,7 @@ import { ReactComponent as Close } from '../../../asset/icons/close.svg';
 import { ReactComponent as ArrowLeft } from '../../../asset/icons/arrow_left.svg';
 import { ReactComponent as ArrowRight } from '../../../asset/icons/arrow_right.svg';
 
-const ModalPage = ({ index, data, fullscreen, setFullscreen, modalRef, numberImg, nextOrPrevImg, setImgCarouselActive }) => (
+const ModalPage = ({ index, data, fullscreen, setFullscreen, modalRef, numberImg, nextOrPrevImg, setImgCarouselActive, isEN }) => (
 									
 	<div className="modal fade pr-0" id={`modal-${index}`} ref={modalRef}>
 		<div className="modal-dialog">
@@ -57,7 +57,7 @@ const ModalPage = ({ index, data, fullscreen, setFullscreen, modalRef, numberImg
 				</div>
 
 				<div className="modal-footer">
-					<p>{ numberImg + 1 } of { data.gallery.length }</p>
+					<p>{ numberImg + 1 } {isEN ? 'of' : 'de'} { data.gallery.length }</p>
 				</div>
 			</div>
 		</div>
