@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AboutProjects from './components/aboutProject/';
 import Footer from './layaut/Footer';
 
-const Project = ({ title, data, history }) => {
+const Project = ({ title, data, isEN, history }) => {
 	
 	useEffect(() => window.scrollTo(0, 0), [title]);
 	
@@ -23,7 +23,7 @@ const Project = ({ title, data, history }) => {
 
 				<section className="more_projects">
 					<div className="container py-5 px-5">
-						<h2 className="pb-4 text-center">More Projects</h2>
+						<h2 className="pb-4 text-center">{isEN ? 'More Projects' : 'Más proyectos'}</h2>
 
 						<aside className="row mt-4 more_projects__container-card">
 							{

@@ -1,23 +1,49 @@
-import React from 'react';
-import Header from './components/header/';
-import AboutMe from './components/aboutMe/';
-import MyService from './components/services/';
-import Technologies from './components/technologies/';
-import Works from './components/works/';
-import HireMe from './components/contactMe/';
-import Footer from './layaut/Footer';
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import './asset/sass/main.scss';
+import './asset/bootstrap.min.css';
+import Home from './Home';
+import Project from './Project';
+import Navbar from './components/navbar/';
+import ButtonUp from './layaut/ButtonUp';
+import { dataEN, dataES } from './utils/dataProjects';
+import { LanguageContext } from './context/LanguageContext';
+import { TranslatorProvider } from "react-translate";
+import { translations } from './utils/translates';
 
-const App = () => (
+const App = () => {
 	
-	<React.Fragment>
-		<Header />
-		<AboutMe />
-		<MyService />
-		<Technologies />
-		<Works />
-		<HireMe />
-		<Footer color="#101010" />
-	</React.Fragment>
-);
+	const { isEN } = useContext( LanguageContext );
+	
+	return (
+		
+		<TranslatorProvider translations={translations}>
+			<Router>
+				<Navbar />
+
+				<ButtonUp />
+
+				<Switch>
+					<Route exact path="/home" component={Home} />
+					<Route path="/project-details/:name" render={({ history, match }) => {
+
+						const dataProject = isEN ? dataEN[match.params.name] : dataES[match.params.name];
+
+						return (
+							<Project 
+								title={match.params.name}
+								data={dataProject}
+								isEN={isEN}
+								history={history}
+							/>
+						)
+					}} />
+
+					<Redirect from='/' to='/home' />
+				</Switch>
+			</Router>
+		</TranslatorProvider>
+	)
+}
 
 export default App;
