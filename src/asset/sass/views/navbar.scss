@@ -66,3 +66,12 @@
 		display: none !important;
 	}
 }
+
+@media (max-width: 320px) {
+	.navbar {
+		&.px-5 {
+			padding-left: 2rem !important;
+			padding-right: 2rem !important;
+		}
+	}
+}

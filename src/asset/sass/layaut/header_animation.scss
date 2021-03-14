@@ -41,40 +41,46 @@
 
 	.bg-header-es {
 		h1, .container-carousel {
-			font-size: 6vw;
+			font-size: 5.9vw;
 		}
 	}
 
 	.container-md {
-		padding-right: 3rem;
-		padding-left: 3rem;
+		padding-right: 2.8rem;
+		padding-left: 2.8rem;
 	}
 }
 
 @media (max-width: 599px) {
 	.container-md {
-		padding-right: 2.5rem;
-		padding-left: 2.5rem;
+		padding-right: 2.4rem;
+		padding-left: 2.4rem;
 	}
 }
 
 @media (max-width: 499px) {
 	.container-md {
-		padding-right: 1.9rem;
-		padding-left: 1.9rem;
+		padding-right: 1.8rem;
+		padding-left: 1.7rem;
 	}
 }
 
 @media (max-width: 399px) {
 	.container-md {
-		padding-right: 1.6rem;
-		padding-left: 1.6rem;
+		padding-right: 1.4rem;
+		padding-left: 1.4rem;
+	}
+
+	.bg-header-es {
+		h1, .container-carousel {
+			font-size: 5.9vw;
+		}
 	}
 }
 
 @media (max-width: 320px) {
 	.container-md {
-		padding-right: 1.4rem;
-		padding-left: 1.4rem;
+		padding-right: 1.2rem;
+		padding-left: 1.2rem;
 	}
 }
