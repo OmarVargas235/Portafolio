@@ -27,8 +27,8 @@ export const translations = {
 	AboutMe: {
 		"TITLE": "About Me",
 		"TITULO": "Sobre mí",
-		"DESCRIPTION": "I am Software Developer in the north santander Colombia. Lastly, I have been working in React, developing personal apps and projects. I have knowledge in JavaScript, HTML, Css, Node and many others Frameworks. I like ReactJS library for frontend.",
-		"DESCRIPCION": "Soy Desarrollador de Software en el norte de Santander Colombia. Por último, he estado trabajando en React, desarrollando aplicaciones y proyectos personales. Tengo conocimientos en JavaScript, HTML, Css, Node y muchos otros Frameworks. Me gusta la biblioteca ReactJS para frontend.",
+		"DESCRIPTION": "I am a web developer and an engineering student at computer science, with experience in the development of applications and web pages, I consider myself a pro-active person, focused on detail, always in looking for the next challenge, with great motivation to learn something new every day.",
+		"DESCRIPCION": "Soy Desarrollador web y estudiante de ingeniería en informática, con experiencia en el desarrollo de aplicaciones y paginas web, me considero una persona pro-activa, enfocada al detalle, siempre enbusca del siguiente reto, con una gran motivación para a prender algo nuevo cada día.",
 		"MAIN_SKILLS": "Main skills",
 		"HABILIDADES": "Habilidades principales",
 		"EDUCATION": "Education",

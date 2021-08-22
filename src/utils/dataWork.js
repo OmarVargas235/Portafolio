@@ -24,4 +24,9 @@ export const data = [
 		techonologies: 'React, Node',
 		id: 5,
 	},
+	{
+		name: 'Ecomerce',
+		techonologies: 'React, Node',
+		id: 6,
+	},
 ]

@@ -7,7 +7,7 @@ const CardWorks = ({ data, isEN }) => (
 		<div className="card py-5 px-4">	
 			<div className={`card-bg-${data.id} card-bg`}></div>
 
-			<div className="card-body">
+			<div className="card-body text-center">
 				<p className="card-text text-center">{data.techonologies}</p>
 				<h4 className="card-title">{data.name} App</h4>
 				<div className="text-center">

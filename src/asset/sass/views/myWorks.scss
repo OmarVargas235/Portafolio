@@ -52,7 +52,7 @@
 		height: 220px;
 	}
 	
-	@for $i from 1 through 5 {
+	@for $i from 1 through 6 {
 
 		.card-bg-#{$i} {
 			background-image: url('../images/presentacion_#{$i}.png');

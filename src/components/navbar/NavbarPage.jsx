@@ -4,7 +4,7 @@ import Icon from '../../asset/images/icon.png';
 import { ReactComponent as TheUnitedStates } from '../../asset/icons/estados-unidos-de-america.svg';
 import { ReactComponent as Spain } from '../../asset/icons/espana.svg';
 import { ReactComponent as GitHubIcon } from '../../asset/icons/github.svg';
-import { ReactComponent as Linkedin } from '../../asset/icons/linkedin.svg';
+// import { ReactComponent as Linkedin } from '../../asset/icons/linkedin.svg';
 import { ReactComponent as BtnToggle } from '../../asset/icons/btn_toggle.svg';
 
 const NavbarPage = ({ menuRef, isPositionFixed, isEN, setIsEN, translate, history }) => (
@@ -30,14 +30,22 @@ const NavbarPage = ({ menuRef, isPositionFixed, isEN, setIsEN, translate, histor
 				> <TheUnitedStates /> </span>
 
 				<a 
-					href="https://github.com/OmarVargas235?tab=repositories"
+					href="https://github.com/OmarVargas235"
 					rel="noopener noreferrer"
 					target="_blank" 
 					className="icon mr-2"
 					> 
 						<GitHubIcon /> 
-					</a>
-				<span className="icon"> <Linkedin /> </span>
+				</a>
+				
+				<a 
+					href="https://drive.google.com/file/d/1fmTcRnVx5usYFoYCARnwbGlr96xqvUS9/view?usp=sharing"
+					rel="noopener noreferrer"
+					target="_blank" 
+					className="icon cv mr-2 font-weight-bold"
+					> 
+						<p className="mb-0">CV</p>
+				</a>
 			</div>
 			
 			<BtnToggle className="btn-toggle" onClick={() => menuRef.current.classList.toggle('menuActive')} />

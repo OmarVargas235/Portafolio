@@ -3,8 +3,6 @@ import HireMePage from './HireMePage';
 import { LanguageContext } from '../../context/LanguageContext';
 import { useTranslate } from "react-translate";
 
-console.log(process.env.REACT_APP_BACKEND_URL)
-
 const HireMe = () => {
 	
 	const t = useTranslate("HireMe");	

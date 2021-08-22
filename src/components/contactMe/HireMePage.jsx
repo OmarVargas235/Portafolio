@@ -11,7 +11,7 @@ const HireMePage = ({ handleChange, handleSubmit, messagesAlert, loadingSendEmai
 			/>
 			
 			<p>{isEN ? translate('DESCRIPTION') : translate('DESCRIPCION')}
-				<span className="text-light font-weight-bold"> (+57)-311-667-2266</span> {isEN ? 'or email'  : 'o correo'}: <span className="text-light font-weight-bold">ov1356272@gmail.com</span>
+				<span className="text-light font-weight-bold"> (+58)-412-4179433</span> {isEN ? 'or email'  : 'o correo'}: <span className="text-light font-weight-bold">ov1356272@gmail.com</span>
 			</p>
 
 			<form 

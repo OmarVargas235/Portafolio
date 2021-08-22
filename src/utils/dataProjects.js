@@ -6,12 +6,14 @@ import boostrap from '../asset/images/bootstrap-Logo.png';
 import styledComponent from '../asset/images/styled-component.png';
 import node from '../asset/images/node-Logo.png';
 import mongodb from '../asset/images/mongodb-Logo.png';
+import materialUi from '../asset/images/material-ui.png';
 
 import cancha from '../asset/images/presentacion_1.png';
 import exchange from '../asset/images/presentacion_2.png';
 import pokemon from '../asset/images/presentacion_3.png';
 import tatuluis from '../asset/images/presentacion_4.png';
 import pizzeria from '../asset/images/presentacion_5.png';
+import ecomerce from '../asset/images/presentacion_6.png';
 
 // Imagenes de la cancha
 import cancha_1 from '../asset/images/cancha_1.png';
@@ -40,6 +42,22 @@ import pizzeria_4 from '../asset/images/pizza_4.png';
 import pizzeria_5 from '../asset/images/pizza_5.png';
 import pizzeria_6 from '../asset/images/pizza_6.png';
 
+// Ecomerce
+import ecomerce_2 from '../asset/images/ecomerce-2.png';
+import ecomerce_3 from '../asset/images/ecomerce-3.png';
+import ecomerce_4 from '../asset/images/ecomerce-4.png';
+import ecomerce_5 from '../asset/images/ecomerce-5.png';
+import ecomerce_6 from '../asset/images/ecomerce-6.png';
+import ecomerce_7 from '../asset/images/ecomerce-7.png';
+import ecomerce_8 from '../asset/images/ecomerce-8.png';
+import ecomerce_9 from '../asset/images/ecomerce-9.png';
+import ecomerce_10 from '../asset/images/ecomerce-10.png';
+import ecomerce_11 from '../asset/images/ecomerce-11.png';
+import ecomerce_12 from '../asset/images/ecomerce-12.png';
+import ecomerce_13 from '../asset/images/ecomerce-13.png';
+import ecomerce_14 from '../asset/images/ecomerce-14.png';
+import ecomerce_15 from '../asset/images/ecomerce-15.png';
+
 export const dataEN = {
 	'cancha': {
 		description: 'soccer field made in react Js and sass',
@@ -54,7 +72,7 @@ export const dataEN = {
 		about: "Project to obtain the quotes of the most important cryptocurrencies through Coincap's REST API, It obtains 20 cryptocurrencies and can filter the search in intervals of 5 10 15 20, in addition to being able to see a graph with the update of the cryptocurrency in the last 24 hours.",
 		technologiesUsed: [css, react, redux, boostrap],
 		gallery: [exchange, exchange_2, exchange_3, exchange_4],
-		moreProjects: [{img: cancha, name: 'Cancha App', params: 'cancha'}, {img: tatuluis, name: 'Tatuluis App', params: 'tatuluis'}, {img: pokemon, name: 'Pokemon App', params: 'pokemon'}],
+		moreProjects: [{img: ecomerce, name: 'Ecomerce App', params: 'ecomerce'}, {img: tatuluis, name: 'Tatuluis App', params: 'tatuluis'}, {img: pokemon, name: 'Pokemon App', params: 'pokemon'}],
 		url: 'https://distracted-meitner-990b6a.netlify.app/',
 	},
 	'pokemon': {
@@ -71,15 +89,23 @@ export const dataEN = {
 		technologiesUsed: [sass, react, boostrap],
 		gallery: [tatuluis, tatuluis_2, tatuluis_3, tatuluis_4],
 		moreProjects: [{img: cancha, name: 'Cancha App', params: 'cancha'},{img: exchange, name: 'Exchange App', params: 'exchange'}],
-		url: 'https://naughty-lamarr-fef6b1.netlify.app/',
+		url: 'https://tatuluis.netlify.app',
 	},
 	"pizzeria-app": {
 		description: 'Pizzeria APP in which you can search for a specific pizzeria and see the types of pizzas they offer.',
 		about: "In this application you have to register to be able to use it, once you are inside you can edit the name and surname as well as your photo and see more information about what the different pizzerias offer.",
 		technologiesUsed: [styledComponent, react, boostrap, node, mongodb],
 		gallery: [pizzeria, pizzeria_1, pizzeria_2, pizzeria_3, pizzeria_4, pizzeria_5, pizzeria_6],
-		moreProjects: [{img: cancha, name: 'Cancha App', params: 'cancha'},{img: exchange, name: 'Exchange App', params: 'exchange'}],
-		url: 'https://musing-edison-986c78.netlify.app',
+		moreProjects: [{img: cancha, name: 'Cancha App', params: 'cancha'},{img: exchange, name: 'Exchange App', params: 'exchange'}, {img: ecomerce, name: 'Ecomerce App', params: 'ecomerce'}],
+		url: 'https://app-pizzeria.netlify.app',
+	},
+	"ecomerce": {
+		description: 'Enter and publish your products which can be selected to appear on the home page, you can edit or delete it, there is also a chat, a notification system, have a history of purchases made within the ecomerce, you can edit your profile among other things.',
+		about: "In this application you have to register to be able to use it, once inside you can perform different actions within the ecomerce.",
+		technologiesUsed: [styledComponent, react, boostrap, node, mongodb, materialUi],
+		gallery: [ecomerce, ecomerce_2, ecomerce_3, ecomerce_4, ecomerce_5, ecomerce_6, ecomerce_7, ecomerce_8, ecomerce_9, ecomerce_10, ecomerce_11, ecomerce_12, ecomerce_13, ecomerce_14, ecomerce_15],
+		moreProjects: [{img: cancha, name: 'Cancha App', params: 'cancha'},{img: exchange, name: 'Exchange App', params: 'exchange'}, {img: pizzeria, name: 'Pizzeria App', params: 'pizzeria-app'}],
+		url: 'https://ecomerce-videjojuegos.netlify.app',
 	}
 };
 
@@ -114,7 +140,7 @@ export const dataES = {
 		technologiesUsed: [sass, react, boostrap],
 		gallery: [tatuluis, tatuluis_2, tatuluis_3, tatuluis_4],
 		moreProjects: [{img: cancha, name: 'Cancha App', params: 'cancha'},{img: exchange, name: 'Exchange App', params: 'exchange'}],
-		url: 'https://naughty-lamarr-fef6b1.netlify.app/',
+		url: 'https://tatuluis.netlify.app',
 	},
 	"pizzeria-app": {
 		description: 'APP Pizzeria en la que puedes buscar una pizzería en concreto y ver los tipos de pizzas que ofrecen.',
@@ -122,6 +148,14 @@ export const dataES = {
 		technologiesUsed: [styledComponent, react, boostrap, node, mongodb],
 		gallery: [pizzeria, pizzeria_1, pizzeria_2, pizzeria_3, pizzeria_4, pizzeria_5, pizzeria_6],
 		moreProjects: [{img: cancha, name: 'Cancha App', params: 'cancha'},{img: exchange, name: 'Exchange App', params: 'exchange'}],
-		url: 'https://musing-edison-986c78.netlify.app',
+		url: 'https://app-pizzeria.netlify.app',
+	},
+	"ecomerce": {
+		description: 'Entra y publica tus productos los cuales pueden ser seleccionados para aparecer en el home, puedes editarlo o eliminarlo, tambien hay un chat, un sistema de notificaciones, tener un historial de las compras realizadas dentro del ecomerce, puedes editar tu perfil entre otras cosas.',
+		about: "En esta aplicación tienes que registrarte para poder utilizarla, una vez dentro puedes realizar diferentes acciones dentro del ecomerce.",
+		technologiesUsed: [styledComponent, react, boostrap, node, mongodb, materialUi],
+		gallery: [ecomerce, ecomerce_2, ecomerce_3, ecomerce_4, ecomerce_5, ecomerce_6, ecomerce_7, ecomerce_8, ecomerce_9, ecomerce_10, ecomerce_11, ecomerce_12, ecomerce_13, ecomerce_14, ecomerce_15],
+		moreProjects: [{img: cancha, name: 'Cancha App', params: 'cancha'},{img: exchange, name: 'Exchange App', params: 'exchange'}, {img: pizzeria, name: 'Pizzeria App', params: 'pizzeria-app'}],
+		url: 'https://ecomerce-videjojuegos.netlify.app',
 	}
 };

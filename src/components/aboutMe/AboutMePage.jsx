@@ -37,7 +37,7 @@ const AboutMePage = ({ isSkills, setIsSkills, isEN, translate }) => (
 
 					{ isSkills 
 						? <SkillsPage isEN={isEN} translate={translate} /> 
-						: <EducationPage /> 
+						: <EducationPage />
 					}
 				</div>
 			</div>
