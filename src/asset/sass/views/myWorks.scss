@@ -55,7 +55,7 @@
 	@for $i from 1 through 6 {
 
 		.card-bg-#{$i} {
-			background-image: url('../images/presentacion_#{$i}.png');
+			background-image: url('../../images/presentacion_#{$i}.png');
 
 			@if $i == 2 or $i == 5 { opacity: .4; }
 		}

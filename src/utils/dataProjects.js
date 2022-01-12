@@ -65,7 +65,7 @@ export const dataEN = {
 		technologiesUsed: [sass, react],
 		gallery: [cancha, cancha_1, cancha_2],
 		moreProjects: [{img: exchange, name: 'Exchange App', params: 'exchange'}, {img: tatuluis, name: 'Tatuluis App', params: 'tatuluis'}, {img: pizzeria, name: 'Pizzeria-App', params: 'pizzeria-app'}],
-		url: 'https://eager-stonebraker-2b0f91.netlify.app/',
+		url: 'https://cancha.netlify.app/',
 	},
 	'exchange': {
 		description: 'App to be able to look at the prices of the 20 cryptocurrencies with the highest value in the market',
@@ -73,7 +73,7 @@ export const dataEN = {
 		technologiesUsed: [css, react, redux, boostrap],
 		gallery: [exchange, exchange_2, exchange_3, exchange_4],
 		moreProjects: [{img: ecomerce, name: 'Ecomerce App', params: 'ecomerce'}, {img: tatuluis, name: 'Tatuluis App', params: 'tatuluis'}, {img: pokemon, name: 'Pokemon App', params: 'pokemon'}],
-		url: 'https://distracted-meitner-990b6a.netlify.app/',
+		url: 'https://exchange-my.netlify.app/',
 	},
 	'pokemon': {
 		description: 'App that consumes the pokeApi api, in which you can search for a particular pokemon and see more details about it.',
@@ -81,7 +81,7 @@ export const dataEN = {
 		technologiesUsed: [styledComponent, redux, boostrap],
 		gallery: [pokemon, pokemon_2, pokemon_3, pokemon_4],
 		moreProjects: [{img: cancha, name: 'Cancha App', params: 'cancha'}, {img: tatuluis, name: 'Tatuluis App', params: 'tatuluis'}, {img: exchange, name: 'Exchange App', params: 'exchange'}],
-		url: 'https://practical-franklin-427457.netlify.app',
+		url: 'https://pokemon-my.netlify.app',
 	},
 	"tatuluis": {
 		description: 'Website made for a tattoo business in cancun mexico.',

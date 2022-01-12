@@ -39,7 +39,7 @@ const NavbarPage = ({ menuRef, isPositionFixed, isEN, setIsEN, translate, histor
 				</a>
 				
 				<a 
-					href="https://drive.google.com/file/d/1fmTcRnVx5usYFoYCARnwbGlr96xqvUS9/view?usp=sharing"
+					href="https://drive.google.com/file/d/10P2K9G-5ypN4mc5Pg52ExIv-B9vuIKQD/view"
 					rel="noopener noreferrer"
 					target="_blank" 
 					className="icon cv mr-2 font-weight-bold"

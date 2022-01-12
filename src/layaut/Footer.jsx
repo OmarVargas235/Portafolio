@@ -16,7 +16,7 @@ const FooterPage = ({ color }) => (
 
 			<a
 				className="footer__icon font-weight-bold"
-				href="https://drive.google.com/file/d/1fmTcRnVx5usYFoYCARnwbGlr96xqvUS9/view?usp=sharing"
+				href="https://drive.google.com/file/d/10P2K9G-5ypN4mc5Pg52ExIv-B9vuIKQD/view"
 				rel="noopener noreferrer"
 				target="_blank"
 			>
