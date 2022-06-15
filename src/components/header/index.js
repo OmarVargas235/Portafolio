@@ -48,7 +48,7 @@ const Header = () => {
 			clearTimeout(timeout);
     	}
 
-	}, []);
+	}, [containerCarousel]);
 
 	return (
 		<HeaderPage 

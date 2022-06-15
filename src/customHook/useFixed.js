@@ -16,7 +16,7 @@ export const useFixed = (n=80) => {
 	
 		return () => window.removeEventListener('scroll', postionFixed);
 
-	}, [isPositionFixed]);
+	}, [isPositionFixed, n]);
 
 	return isPositionFixed;
 }
